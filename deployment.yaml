@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-ejemplo-evaluacion
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-ejemplo-evaluacion
+  template:
+    metadata:
+      labels:
+        app: app-ejemplo-evaluacion
+    spec:
+      containers:
+        - name: app-ejemplo-evaluacion
+          image: app-ejemplo-evaluacion:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: PORT
+              value: "8080"

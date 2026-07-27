@@ -1,0 +1,14 @@
+{
+  "name": "app-ejemplo-evaluacion",
+  "version": "1.0.0",
+  "description": "Aplicacion de ejemplo, neutral, para la evaluacion practica de Docker, Kubernetes y CI/CD",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
